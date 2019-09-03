@@ -5,7 +5,7 @@ services:
     container_name: solr4
     restart: unless-stopped
     build: .
-    ports:
-      - "127.0.0.1:8985:8983"
+#    ports:
+#      - "127.0.0.1:8985:8983"
     volumes:
       - ./cores:/opt/solr/cores
