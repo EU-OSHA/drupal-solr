@@ -2,10 +2,10 @@ version: "2.0"
 
 services:
   solr4:
-    container_name: solr4
-    restart: unless-stopped
     build: .
+#    container_name: solr4
+#    restart: unless-stopped
 #    ports:
-#      - "127.0.0.1:8985:8983"
+#      - "127.0.0.1:8983:8983"
     volumes:
-      - ./cores:/opt/solr/cores
+      - ./cores:/opt/solr/cores:Z
